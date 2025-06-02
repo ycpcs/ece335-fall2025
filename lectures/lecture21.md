@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lecture 20: Function Properties"
+title: "Lecture 21: Combinatorics"
 ---
 
 Introduction
