@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Lecture 22: Permutations"
+---
 
 Distinct Symbol Arrangements
 ============================
@@ -45,7 +46,9 @@ Alternatively we can use permutations by noting that there are 10! total possibl
 
 > A family has 6 people to be seated around a round table for Thanksgiving dinner. If rotations are ignored, how many arrangements of people are there?
 	
-At first we might suspect that there are 6! arrangements, however this would duplicate count rotation arrangements. Instead we simply assume the first person sits in a spot (since rotations are ignored, the particular seat is irrelevant) and then there are 5! = 120 arrangements for the other people.
+At first we might suspect that there are 6! arrangements, however this would duplicate count rotation arrangements. Instead we simply assume the first person sits in a spot (since rotations are ignored, the particular seat is irrelevant) and then there are 
+
+> 5! = 120 arrangements for the other people.
 
 **Example 4**
 
