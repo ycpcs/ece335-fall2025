@@ -101,7 +101,7 @@ Unfortunately these events are *not* independent (since if *C* is selected as pr
 
 First select the *secretary* of which there are two possiblities (*C* or *D*). Then choose the president of which there are two possibilities (*B* or the one not chosen for secretary). Then choose vice-president of which there are two possibilities. And finally there will only be one person left for treasurer. Thus the number of possible outcomes is
 
-    2 · 2 · 2 · 1 = 8
+> 2 · 2 · 2 · 1 = 8
 
 Addition Rule
 =============
@@ -119,10 +119,13 @@ Since the first character must be a letter (which can be upper or lower case), t
 To find the total number of variable names we will add up all the
 variables of length 1 plus the variables of length 2, etc.
 
-> # variables of length 1 = 52
-> # variables of length 2 = 52 · 63 = 3276
-> # variables of length 3 = 52 · 63<sup>2</sup> = 206388
-> # variables of length 4 = 52 · 63<sup>3</sup> = 13002444
+> \# variables of length 1 = 52
+
+> \# variables of length 2 = 52 · 63 = 3276
+
+> \# variables of length 3 = 52 · 63<sup>2</sup> = 206388
+
+> \# variables of length 4 = 52 · 63<sup>3</sup> = 13002444
 
 Thus the total number of possible variable names is
 52+3276+206388+13002444 = 13,212,160.
@@ -140,10 +143,13 @@ Complement Rule
 
 From example 8 we know that there are 13,212,160 possible variables *including* ones with repeated symbols. Thus we will compute the number of variables that do *not* contain any repeated symbols (again using the addition rule).
 
-> # variables of length 1 (no repeats) = 52
-> # variables of length 2 (no repeats) = 52 · 62 = 3224
-> # variables of length 3 (no repeats) = 52 · 62 · 61 = 196664
-> # variables of length 4 (no repeats) = 52 · 62 · 61 · 60 = 11799840
+> \# variables of length 1 (no repeats) = 52
+
+> \# variables of length 2 (no repeats) = 52 · 62 = 3224
+
+> \# variables of length 3 (no repeats) = 52 · 62 · 61 = 196664
+
+> \# variables of length 4 (no repeats) = 52 · 62 · 61 · 60 = 11799840
 
 Thus there are 52+3224+196664+11799840 = 11,999,780 variables *without* repeats. Therefore there are 13212160 - 11999780 = 1,212,380 variables that contain repeated symbols (roughly 9.2%).
 
@@ -156,9 +162,13 @@ We could find this number manually by checking every number between 1-100 to see
 To find the number that are divisible we note that there is a correspondance between the divisible values and the integers as
 
 > 7 = 1 · 7
+
 > 14 = 2 · 7
+
 > 21 = 3 · 7
+
 > ...
+
 > 98 = 14 · 7
 
 Thus the number of values divisible by 7 is the *same* as the number of integers between 1-14 which is 14. (14-1+1=14).
