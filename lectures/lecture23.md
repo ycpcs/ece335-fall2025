@@ -145,9 +145,9 @@ Pascal's Triangle
 
 Furthermore, an interesting figure known as *Pascal's triangle* is given by
 	
-> (*x* + *y*)<sup>0</sup>             1
+> (*x* + *y*)<sup>0</sup>             1
 
-> (*x* + *y*)<sup>1</sup>           1   1
+> (*x* + *y*)<sup>1</sup>           1   1
 
 > (*x* + *y*)<sup>2</sup>         1   2   1	
 
