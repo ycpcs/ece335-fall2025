@@ -88,7 +88,7 @@ Again since the choices are independent the total number of ways to form the pai
 		
 Then combining the possible 3-of-a-kinds with the possible (different value) pairs by the multiplication rule gives
 
-> (<sub>13</sub>*C*<sub>1</sub>)(</sub>4</sub>*C*<sub>3</sub>)(</sub>12</sub>*C*<sub>1</sub>)(<sub>4</sub>*C*<sub>2</sub>) = 52 · 72 = 3744
+> (<sub>13</sub>*C*<sub>1</sub>)(<sub>4</sub>*C*<sub>3</sub>)(<sub>12</sub>*C*<sub>1</sub>)(<sub>4</sub>*C*<sub>2</sub>) = 52 · 72 = 3744
 	
 Note that we would get the same answer if we selected the pair first (which should be the case since order doesn't mattter).
 
@@ -110,11 +110,11 @@ Combinations With Repeats
 
 > Suppose you are going on a trip and taking a cooler that holds 10 cans of soda and you have 4 types of soda to choose from. How many ways can the cooler be filled?
 	
-An initial guess might be 10! but this is incorrect since order doesn't matter. Next we might try <sub>10</sub>*C*<sub>4</sub> but again this is incorrect since there *must* be repeats. This is known as the *pigeonhole principle* which says that if you have *n* objects to be placed in *k* slots where *k* < *n* then *at least* one slot must have multiple objects. Hence we will approach the problem by representing the cans as *X*'s and the *divisions* between types as |'s. So for example, one arrangement might be
+An initial guess might be 10! but this is incorrect since order doesn't matter. Next we might try <sub>10</sub>*C*<sub>4</sub> but again this is incorrect since there *must* be repeats. This is known as the *pigeonhole principle* which says that if you have *n* objects to be placed in *k* slots where *k* < *n* then *at least* one slot must have multiple objects. Hence we will approach the problem by representing the cans as *X*'s and the *divisions* between types as \|'s. So for example, one arrangement might be
 
-> XXXX|XX|XX|XX
+> XXXX\|XX\|XX\|XX
 	
-which would represent 4 of type 1, and 2 of types 2, 3, and 4. Thus if we look at the diagram we see that for 4 types there are 3|'s (which in general for *n* types there are *n*-1 |'s). Therefore for *r* objects and *n*-1 |'s there are a total of *r*+*n*-1 slots. Therefore we simply choose *r* of these slots (for the *X*'s since the remaining ones will contain the |'s) giving the formula
+which would represent 4 of type 1, and 2 of types 2, 3, and 4. Thus if we look at the diagram we see that for 4 types there are 3\|'s (which in general for *n* types there are *n*-1 \|'s). Therefore for *r* objects and *n*-1 \|'s there are a total of *r*+*n*-1 slots. Therefore we simply choose *r* of these slots (for the *X*'s since the remaining ones will contain the \|'s) giving the formula
 
 > <sub>r+n-1</sub>*C*<sub>r</sub>
 	
@@ -122,7 +122,7 @@ Hence for *n*=4 types and *r*=10 cans we would have
 
 > <sub>10+4-1</sub>*C*<sub>10</sub> = <sub>13</sub>*C*<sub>10</sub> = 13! / (3! · 10!) = 286
 	
-Alternatively we could place the *n*-1 |'s since
+Alternatively we could place the *n*-1 \|'s since
 
 > <sub>r+n-1</sub>*C*<sub>n-1</sub> = <sub>r+n-1</sub>*C*<sub>r</sub>
 	
@@ -145,19 +145,19 @@ Pascal's Triangle
 
 Furthermore, an interesting figure known as *Pascal's triangle* is given by
 	
-> (*x* + *y*)<sup>0</sup>	          1
+> (*x* + *y*)<sup>0</sup>             1
 
-> (*x* + *y*)<sup>1</sup>	        1   1
+> (*x* + *y*)<sup>1</sup>           1   1
 
-> (*x* + *y*)<sup>2</sup>	      1   2   1	
+> (*x* + *y*)<sup>2</sup>         1   2   1	
 
-> (*x* + *y*)<sup>3</sup>	    1   3   3   1
+> (*x* + *y*)<sup>3</sup>       1   3   3   1
 
-> (*x* + *y*)<sup>4</sup>	  1   4   6   4   1
+> (*x* + *y*)<sup>4</sup>     1   4   6   4   1
 
-> (*x* + *y*)<sup>5</sup>	 1  5   10  10  5  1
+> (*x* + *y*)<sup>5</sup>    1  5   10  10  5  1
 
-> (*x* + *y*)<sup>6</sup>	1  6  15  20  15  6  1
+> (*x* + *y*)<sup>6</sup>   1  6  15  20  15  6  1
 	
 where any particular value is the *sum* of the two values *above* it.
 	
