@@ -157,7 +157,7 @@ Furthermore, an interesting figure known as *Pascal's triangle* is given by
 
 > (*x* + *y*)<sup>5</sup>    1  5   10  10  5  1
 
-> (*x* + *y*)<sup>6</sup>   1  6  15  20  15  6  1
+> (*x* + *y*)<sup>6</sup>&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;1
 	
 where any particular value is the *sum* of the two values *above* it.
 	
