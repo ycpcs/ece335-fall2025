@@ -98,7 +98,7 @@ courseInfo.classPeriods = [
 		reading: "",
 	},
 	{
-		topic: new Topic("Lecture 23: Combinations","lectures/lecture22.html"),
+		topic: new Topic("Lecture 23: Combinations","lectures/lecture23.html"),
 		reading: "",
 	},
 	{
