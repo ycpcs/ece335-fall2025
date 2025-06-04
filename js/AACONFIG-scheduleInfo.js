@@ -14,11 +14,11 @@ courseInfo.classPeriods = [
 		reading: "1.2 pg. 15-24",
 	},
 	{
-		topic: new Topic("Lecture 4: The Conditional and Biconditional Connectives","lectures/lecture04.html"),
+		topic: new DoubleTopic("Lecture 4: The Conditional and Biconditional Connectives","lectures/lecture04.html","Assignment 1 Due","assign/assign01.html"),
 		reading: "1.5 pg. 45-55",
 	},
 	{
-		topic: new DoubleTopic("Lecture 5: Quantifiers", "lectures/lecture05.html","Assignment 1 Due","assign/assign01.html"),
+		topic: new Topic("Lecture 5: Quantifiers", "lectures/lecture05.html"),
 		reading: "2.1 pg. 58-66",
 	},
 	{
@@ -52,25 +52,21 @@ courseInfo.classPeriods = [
 		reading: "3.2 pg. 100-111",
 	},
 	{
-		topic: new DoubleTopic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html", "Assignment 4 Due","assign/assign04.html"),
-		reading: "3.3 pg. 113-127",
-	},
-	{
-		topic: new Topic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html"),
-		reading: "3.4 pg. 130-139",
-	},
-	{
-		topic: new Topic("Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html"),
-		reading: "3.5 pg. 142-150",
-	},
-	{
-		topic: new DoubleTopic("Exam 2 Review", "", "Assignment 5 Due","assign/assign05.html")
+		topic: new DoubleTopic("Exam 2 Review", "", "Assignment 4 Due","assign/assign4.html")
 	},
 	{
 		topic: new Topic("** Exam 2", "")
 	},
 	{
-		topic: new Topic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html"),
+		topic: new Topic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html"),
+		reading: "3.3 pg. 113-127",
+	},
+	{
+		topic: new DoubleTopic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html", "Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html)"),
+		reading: "3.4 pg. 130-139, 3.5 pg. 142-150",
+	},
+	{
+		topic: new DoubleTopic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html", "Assignment 5 Due","assign/assign05.html"),
 		reading: "6.1 pg. 273-278",
 	},
 	{
@@ -78,19 +74,21 @@ courseInfo.classPeriods = [
 		reading: "6.3 pg. 293-299",
 	},
 	{
+		topic: new DoubleTopic("Exam 3 Review", "", "Assignment 6 Due","assign/assign6.html")
+	},
+	{
+		topic: new Topic("** Exam 3", "")
+	},
+	{
 		topic: new Topic("Lecture 18: Relations","lectures/lecture18.html"),
 		reading: "4.1-4.3 pg. 163-186",
 	},
 	{
-		topic: new Topic("Lecture 19: Functions","lectures/lecture19.html"),
-		reading: "5.1 pg. 229-236",
+		topic: new DoubleTopic("Lecture 19: Functions","lectures/lecture19.html", "Lecture 20: Function Properties","lectures/lecture20.html"),
+		reading: "5.1 pg. 229-236, 5.2-5.3 pg. 240-256",
 	},
 	{
-		topic: new Topic("Lecture 20: Function Properties","lectures/lecture20.html"),
-		reading: "5.2-5.3 pg. 240-256",
-	},
-	{
-		topic: new Topic("Lecture 21: Combinatorics","lectures/lecture21.html"),
+		topic: new DoubleTopic("Lecture 21: Combinatorics","lectures/lecture21.html", "Assignment 7 Due","assign/assign07.html"),
 		reading: "",
 	},
 	{
@@ -102,7 +100,7 @@ courseInfo.classPeriods = [
 		reading: "",
 	},
 	{
-		topic: new DoubleTopic("Exam 4 Review", "", "Assignment 6 Due","assign/assign06.html")
+		topic: new DoubleTopic("Exam 4 Review", "", "Assignment 8 Due","assign/assign08.html")
 	},
 	{
 		topic: new Topic("** Exam 4", "")
