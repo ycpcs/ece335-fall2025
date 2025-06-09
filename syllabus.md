@@ -112,7 +112,7 @@ reading you did not understand to your satisfaction.
 
 ### Homework assignments
 
-Homework problems and solutons will be posted on the [website](assign/index.html). Students must self-assess their assignments *before* submitting to Canvas. **No credit will be given for assignments that are not self-assessed or more than three (3) days late.**
+Homework problems and solutons will be posted on the [website](assign/index.html). Students must self-assess their assignments *before* submitting to Canvas. **No credit will be given for assignments that are not self-assessed. There will be a 20\% deduction per day late and no credit for more than three (3) days late.**
 
 ### Attendance
 

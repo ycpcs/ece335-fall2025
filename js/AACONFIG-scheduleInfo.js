@@ -48,25 +48,25 @@ courseInfo.classPeriods = [
 		reading: "3.1 pg. 89-98",
 	},
 	{
-		topic: new Topic("Lecture 11: Proofs Involving Negations and Conditionals","lectures/lecture11.html"),
-		reading: "3.2 pg. 100-111",
-	},
-	{
 		topic: new DoubleTopic("Exam 2 Review", "", "Assignment 4 Due","assign/assign4.html")
 	},
 	{
 		topic: new Topic("** Exam 2", "")
 	},
 	{
+		topic: new Topic("Lecture 11: Proofs Involving Negations and Conditionals","lectures/lecture11.html"),
+		reading: "3.2 pg. 100-111",
+	},
+	{
 		topic: new Topic("Lecture 12: Proofs Involving Quantifiers","lectures/lecture12.html"),
 		reading: "3.3 pg. 113-127",
 	},
 	{
-		topic: new DoubleTopic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html", "Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html)"),
+		topic: new TripleTopic("Lecture 13: Proofs Involving Conjunctions and Biconditionals","lectures/lecture13.html", "Lecture 14: Proofs Involving Disjunctions","lectures/lecture14.html", "Assignment 5 Due","assign/assign05.html"),
 		reading: "3.4 pg. 130-139, 3.5 pg. 142-150",
 	},
 	{
-		topic: new DoubleTopic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html", "Assignment 5 Due","assign/assign05.html"),
+		topic: new Topic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html"),
 		reading: "6.1 pg. 273-278",
 	},
 	{
