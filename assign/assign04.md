@@ -3,16 +3,16 @@ layout: default
 title: "Assignment 4"
 ---
 
-**Due: Wednesday, June 19th in class** Late assignments will be penalized 20% per day.
+**Due: Tuesday, Oct 7th in class** Late assignments will be penalized 20% per day.
+
+**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Oct 9th*.
 
 Book Questions from *How To Prove It - 3rd ed.*
 ===============================================
 
-2.3.1 (pg. 86), 2.3.8 (pg. 87)
+2.3.1 a,b (pg. 86), 2.3.8 (pg. 87), 2.3.11 (pg. 87)
 
-2.3.11 (pg. 87), 3.1.8 (pg. 99)
-
-3.1.12 (pg. 100), 3.2.6 (pg. 112)
+3.1.8 (pg. 99), 3.1.12 (pg. 100)
 
 
 *Hints:*
@@ -26,5 +26,3 @@ Book Questions from *How To Prove It - 3rd ed.*
 > 3.1.8 - Begin by applying the conditional proof form to write the set of givens and goal. Then use set definitions (similar to the previous section) to rewrite the set expression in its logical form. Manipulate the logical form using the givens to reduce it until the goal is reached. You should show your scratch work, but remember that the final statement of the *proof* should *not* show the scratch work, but be a concise progression of justified steps leading to the conclusion.
 > 
 > 3.1.12 - Consider proof by *contrapositive*. Construct the contrapositive and then state the givens of goals to prove the theorem.
-> 
-> 3.2.6 - Use *proof by contradiction* to provide an alternative proof of Example 3.2.1. Assume that *a* ∈ *A*\\*B* and deduce a contradiction. Note what this assumption states regarding whether or not *a* ∈ *A* and thus *A* ∩ *C*.
