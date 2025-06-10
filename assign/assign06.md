@@ -8,6 +8,8 @@ title: "Assignment 6"
 Book Questions from *How To Prove It - 3rd ed.*
 ===============================================
 
+3.4.3 (pg. 140), 3.4.7 (pg. 140)
+
 3.5.2 (pg. 150)
 
 6.1.2 (pg. 278), 6.1.15 (pg. 279)
@@ -19,6 +21,23 @@ Book Questions from *How To Prove It - 3rd ed.*
 
 *Hints:*
 
+> 3.4.3 - Write out what it means for *C* \\ *B* ⊆ *C* \\ *A* and then apply the conditional strategy which will give a conjunction given and a conjunction goal. Then prove both goals separately.
+>
+> 3.4.7 - DO NOT show this equivalency using logical equivalencies. Instead prove it by
+> interpreting the = as ↔. Thus prove
+> 
+> > ℘(*A* ∩ *B*) ↔ ℘(*A*) ∩ ℘(*B*)
+>
+> Break the biconditional up into separate parts (recall *P* ↔ *Q* = (*P* → *Q*) ∧ (*Q* → *P*) and show 
+>
+> > ℘(*A* ∩ *B*) → ℘(*A*) ∩ ℘(*B*)
+> 
+> and separately
+> 
+> > ℘(*A*) ∩ ℘(*B*) → ℘(*A* ∩ *B*)
+> 
+> Since powersets imply subsets, use universal instantiation to construct the proof.
+>
 > 3.5.2 - Note that the unions will produce disjuntions (since union implies **or**). Thus construct two cases to show *x* ∈ *A* or alternatively that *x* ∈ (*B* \\ *C*) and that these two cases cover all possibilities.
 
 > 6.1.2 - Verify that it is true for *n* = 0, then write out the left hand side for *n*+1 and use the assumption that the equality is true for *n* to prove the right hand side for *n*+1.
