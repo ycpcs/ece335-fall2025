@@ -18,10 +18,10 @@ This page links to assignment descriptions.
 > Sept 30  | [Assignment 3](../assign/assign03.html)  | **Oct 2**         |
 > Oct 7    | [Assignment 4](../assign/assign04.html)  | **Oct 9**         |
 > Oct 23   | [Assignment 5](../assign/assign05.html)  | **Oct 25**        |
+> Nov 4    | [Assignment 6](../assign/assign06.html)  | **Nov 6**         |
 
 
 <!--
-> Nov 4    | [Assignment 6](../assign/assign06.html)             | **Nov 6**         |
 > Nov 18   | [Assignment 7](../assign/assign07.html)             | **Nov 20**        |
 > Dec 2    | [Assignment 8](../assign/assign08.html)             | **Dec 4**         |
 -->
