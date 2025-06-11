@@ -26,6 +26,9 @@ Welcome to the website for ECE 335, Discrete Mathematics with Applications, at Y
 * **Oct 9 - EXAM II**
 * **Oct 14 - NO CLASS - FALL BREAK**
 * **Oct 23** - [Assignment 5](assign/assign05.html) Due. Submit to Canvas by **11:59pm Oct 25**
+* **Nov 4** - [Assignment 6](assign/assign06.html) Due. Submit to Canvas by **11:59pm Nov 6**
+* **Nov 6 - EXAM III**
+* **Nov 18** - [Assignment 7](assign/assign07.html) Due. Submit to Canvas by **11:59pm Nov 20**
 * **Nov 27 - NO CLASS - THANKSGIVING BREAK**
 
 
