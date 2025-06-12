@@ -30,12 +30,6 @@ Welcome to the website for ECE 335, Discrete Mathematics with Applications, at Y
 * **Nov 6 - EXAM III**
 * **Nov 18** - [Assignment 7](assign/assign07.html) Due. Submit to Canvas by **11:59pm Nov 20**
 * **Nov 27 - NO CLASS - THANKSGIVING BREAK**
-
-
-<!--
-* **July 8** - [Assignment 5](assign/assign05.html) Due. Submit to Canvas by **July 10**
-* **July 24** - [Assignment 6](assign/assign06.html) Due. Submit to Canvas by **July 26**
-* **July 29 - EXAM III**
-* **July 31 - NO CLASS**
-* **Aug 7 - FINAL EXAM**
--->
+* **Dec 2** - [Assignment 8](assign/assign08.html) Due. Submit to Canvas by **11:59pm Dec 4**
+* **Dec 4 - EXAM IV**
+* **Dec 11 - (optional) FINAL EXAM - 10:15am-12:15pm**
