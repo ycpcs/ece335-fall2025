@@ -54,17 +54,17 @@ four midterm exams and one final exam.
 
 ### Program Outcomes
 
-This course supports the following student outcomes (a) through (k) established for the Electrical and Computer Engineering program:
+This course supports the following student outcomes 1 through 7 established for the Electrical and Computer Engineering program:
 
 -   (1) An ability to apply knowledge of mathematics, science, and engineering
 
 ### Learning Outcomes
 
-By the end of this course, you will be able to (letters in parentheses indicate student outcomes a-k):
+By the end of this course, you will be able to (letters in parentheses indicate student outcomes 1-7):
 
--   Represent and reduce logical statements as Boolean expressions (a)
--   Use basic set theory operations to determine composition and equivalency of sets (a)
--   Identify and describe the cardinality of various sets (a)
+-   Represent and reduce logical statements as Boolean expressions (1)
+-   Use basic set theory operations to determine composition and equivalency of sets (1)
+-   Identify and describe the cardinality of various sets (1)
 -   Describe various proofing techniques including direct, contradiction, and induction
 -   Identify and use proof techniques for problems involving conditionals, biconditionals, existential, uniqueness,and universal problem statements
 -   Solve counting problems using combinatorics including permutations and combinations
@@ -75,8 +75,8 @@ By the end of this course, you will be able to (letters in parentheses indicate 
 
 Your overall grade for the course will be determined as follows:
 
--   Homework assignments: 25%
--   Exams: 75% (25% each)
+-   Homework assignments: 15%
+-   Exams: 85% (28.33% each)
 
 Grades are assigned on a 100-point scale:
 
