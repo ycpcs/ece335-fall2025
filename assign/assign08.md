@@ -5,7 +5,7 @@ title: "Assignment 8"
 
 **Due: Tuesday, Dec 2nd in class** Late assignments will be penalized 20% per day.
 
-**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Dec 4th*.
+**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Dec 4th.**
 
 Lecture Questions
 =================

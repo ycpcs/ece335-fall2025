@@ -5,7 +5,7 @@ title: "Assignment 7"
 
 **Due: Tuesday, Nov 18th in class** Late assignments will be penalized 20% per day.
 
-**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Nov 20th*.
+**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Nov 20th.**
 
 Book Questions from *How To Prove It - 3rd ed.*
 ===============================================

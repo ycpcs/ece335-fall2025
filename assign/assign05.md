@@ -5,7 +5,7 @@ title: "Assignment 5"
 
 **Due: Thursday, Oct 23rd in class** Late assignments will be penalized 20% per day.
 
-**Submit your self-graded assignment to Canvas by 11:59pm on Saturday, Oct 25th*.
+**Submit your self-graded assignment to Canvas by 11:59pm on Saturday, Oct 25th.**
 
 Book Questions from *How To Prove It - 3rd ed.*
 ===============================================

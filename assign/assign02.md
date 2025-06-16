@@ -5,7 +5,7 @@ title: "Assignment 2"
 
 **Due: Tuesday, Sept 16th in class** Late assignments will be penalized 20% per day.
 
-**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Sept 18th*.
+**Submit your self-graded assignment to Canvas by 11:59pm on Thursday, Sept 18th.**
 
 Book Questions from *How To Prove It - 3rd ed.*
 ===============================================
