@@ -75,8 +75,8 @@ By the end of this course, you will be able to (letters in parentheses indicate 
 
 Your overall grade for the course will be determined as follows:
 
--   Homework assignments: 15%
--   Exams: 85% (28.33% each)
+-   Homework assignments: 16%
+-   Exams: 84% (21% each)
 
 Grades are assigned on a 100-point scale:
 
@@ -100,7 +100,7 @@ announcements.
 
 **No make-up exams or quizzes will be given without approval of the
 instructor prior to class unless proof of extreme emergency or illness
-is provided.** There will be 3 midterm exams and a final. Students that choose to take the final may replace their lowest mid-term exam score with their score on the final exam.
+is provided.** There will be 4 midterm exams and a final. Students that choose to take the final may replace their lowest mid-term exam score with their score on the final exam.
 
 **You must receive a score of 70+ on AT LEAST ONE exam to earn a passing grade for the course.**
 
