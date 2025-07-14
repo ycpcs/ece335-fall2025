@@ -1,267 +1,105 @@
 ---
 layout: default
-title: "Lecture 18: Relations"
+title: "Lecture 18: Functions"
 ---
 
-Cartesian Product
-=================
+Functions
+=========
 
 > **Definition**
 
-> Suppose *a* ∈ *A* and *b* ∈ *B*, then (*a*, *b*) is known as an *ordered
-pair*.
+> Suppose *f* is a relation from *A* to *B*. Then *f* is known as a
+> *function* from *A* to *B* (written *f*: *A* → *B* or *f(a) = b*) if for
+> *every* *a* ∈ *A* there is *exactly one* *b* ∈ *B* such that (*a*, *b*)
+> ∈ *f*.
 
-> The *Cartesian Product* of the sets *A* and *B*, denoted *A* × *B*, is
-the *set* of *all* ordered pairs (*a*, *b*) where *a* ∈ *A* and *b* ∈
-*B*.
+> ∀*a* ∈ *A* ∃!*b* ∈ *B* ((*a*, *b*) ∈ *f*).
 
-> Formally,
+>**Theorem**
 
-> *A* × *B* = {(*a*, *b*) \| *a* ∈ *A* ∧ *b* ∈ *B*}
-
-> Furthermore, we can consider the truth set for a statement *P(x,y)* with
-two free variables where *x* ∈ *A* and *y* ∈ *B* by specifying the
-combinations as ordered pairs from the Cartesian product.
-
-> *truth set of P(x,y)* = {(*a*, *b*) ∈ *A* × *B* \| *P(a,b)*}
+> For two functions *f* and *g* from *A* to *B*, if ∀*a* ∈ *A* (*f(a)* =
+> *g(a)*) then *f* = *g*.
 
 **Example 1**
 
-> Consider the Cartesian Product ℝ × ℝ
+> Determine which of the following relations are functions
 
-This Cartesian product is the set of all ordered pairs of real numbers,
-thus
+> > 1.  *A* = {1, 2, 3}, *B* = {4, 5, 6} and *f* = {(1,5), (2,4), (3,5)}
+> > 2.  *A* = {1}, *B* = {4, 5, 6} and *g* = {(1,4), (1,5), (1,6)}
+> > 3.  *P* the set of all people and *c* = {(*p*, *q*) ∈ *P* × *P* \| *p*
+> > is a parent of *q* }
+> > 4.  *l* = {(*x*, *y*) ∈ ℝ × ℝ \| *y* = 2*x* }
+> > 5.  *S* the set of students, *P* set of professors, and *a* = {(*s*,
+> > *p*) ∈ *S* × *P* \| *s* has *p* as an advisor }
 
-> ℝ × ℝ = {(*x*, *y*) \| *x* ∈ ℝ ∧ *y* ∈ ℝ}
 
-Which geometrically represents the coordinates of points in a plane (and
-hence the name *Cartesian coordinates*).
+> 1. If we look at the relation *f* we see that for each value from *A*
+    there is only *one* value from *B* (even though 5 is the value for
+    *two different* values from *A* there is not *one* value from *A*
+    that has *two different* values from *B*). Thus *f* is a function.
+> 2. Looking at the relation *g*, we see that the value 1 has multiple
+    values from *B* and hence *g* is **not** a function.
+> 3. Since some parents have multiple children, *c* is **not** a
+    function.
+> 4. For any real number *x*, there is a unique *y* (found by multiplying
+    *x* by 2) and thus *l* is a function. Note: this is the more
+    traditional definition of a mathematical function where each *x* has
+    only 1 *y*, i.e. vertical line test.
+> 5. Typically each student only has one advisor that is a professor, so
+    *a* would be a function. Note that if the relation was *s* has *p*
+    as a *professor* then it would not be a relation because most
+    students have multiple professors.
 
 **Example 2**
 
-> Prove *A* × (*B* ∩ *C*) = (*A* × *B*) ∩ (*A* × *C*).
+> Suppose *f*: *A* → *B* and *R* is a relation on *A*. Define a relation
+> *S* on *B* as
 
-Note that this means that Cartesian product distributes over
-intersection.
+> *S* = {(*x*, *y*) ∈ *B* × *B* \| ∃u ∈ *A* ∃*v* ∈ *A*(*f(u)* = *x* ∧
+> *f(v)* = *y* ∧ (*u*, *v*) ∈ *R*) }
 
-> (→) Let (*x*, *y*) be an arbitrary element of *A* × (*B* ∩ *C*). 
-> > 
-> > Then *x* ∈ *A* and *y* ∈ *B* ∩ *C* ⇒ *y* ∈ *B* ∧ *y* ∈ *C*. Since *x* ∈ *A* and *y* ∈ 
-> > *B* gives (*x*, *y*) ∈ *A* × *B*. Similarly since *x* ∈ *A* and *y* ∈ *C* gives (*x*, 
-> > *y*) ∈ *A* × *C*. Then since (*x*, *y*) ∈ *A* × *B* and (*x*, *y*) ∈ *A* × *C* ⇒ (*x*, 
-> > *y*) ∈ (*A* × *B*) ∩ (*A* × *C*).
+> Determine
 
-> (←) Let (*x*, *y*) be an arbitrary element of (*A* × *B*) ∩ (*A* × *C*).
-> >  
-> > Then (*x*, *y*) ∈ *A* × *B* and (*x*, *y*) ∈ *A* × *C*. Hence *x* ∈ *A*, *y* ∈ *B*,
-> > and *y* ∈ *C*. But then *y* ∈ *B* ∩ *C* and thus (*x*, *y*) ∈ *A* × (*B* ∩ *C*).
+> > 1.  If *R* is reflexive, is *S* reflexive?
+> > 2.  If *R* is symmetric, is *S* symmetric?
+> > 3.  If *R* is transitive, is *S* transitive?
 
-Relations
-=========
+> 1.  Let *A* = {*a*} and *R* = {(*a*, *a*)} which is trivially reflexive.
+    Let *B* = {*b*, *c*} and *f* = {(*a*, *b*)}. Then *S* = {(*b*, *b*)}
+    however (*c*, *c*) ∉ *S* and thus *S* is not reflexive.
+> 2.  Assume *R* is symmetric and *xSy*. Then there exists a *u* ∈ *A*
+    such that *f(u) = x* and *v* ∈ *A* such that *f(v) = y* with *uRv*.
+    Since *R* is symmetric, we have *vRu* and thus *ySx* giving *S* is
+    symmetric.
+> 3.  Let *A* = {1, 2, 3, 4} and *R* = {(1,2), (3,4)} which is vacuously
+    transitive (since there are no pairs with (*x*, *y*) ∧ (*y*, *z*)).
+    Let *B* = {5, 6, 7} and *f* = {(1, 5), (2, 6), (3, 6), (4, 7)}. Then
+    *S* = {(5, 6), (6, 7)}. But clearly *S* is not transitive since it
+    does not contain the element (5,7).
 
-> **Definitions**
+Composition
+===========
 
-> Suppose *A* and *B* are sets, then a set *R* ⊆ *A* × *B* is known as a *relation* from *A* to *B*.
+> **Theorem**
 
-> *Domain*
-> 
-> For a relation *R*, the *domain* of *R* is the set of values *a* that are in the first coordinate of the relation. Formally,
-> 
-> Dom(*R*) = {*a* ∈ *A* \| ∃*b* ∈ *B* ((*a*, *b*) ∈ *R*)}
-
-> *Range*
->
-> The *range* of a relation *R* is the set of values *b* that are in the second coordinate of the relation. Formally,
-> 
-> Range(*R*) = {*b* ∈ *B* \| ∃*a* ∈ *A* ((*a*, *b*) ∈ *R*)}
-
-> *Inverse*
-> 
-> The *inverse* of a relation *R* is the set of ordered pairs (*b*, *a*) such that (*a*, *b*) is in *R*. Formally,
->
-> *R* <sup>-1</sup> = {(*b*, *a*) ∈ *B* × *A* \| (*a*, *b*) ∈ *R*}
-
-> *Composition*
->
-> For two relations *R* from *A* to *B* and *S* from *B* to *C*, the *composition* is a relation from *A* to *C* given by (**note** the order of the composition)
->
-> *S* ○ *R* = {(*a*, *c*) ∈ *A* × *C* \| ∃*b* ∈ *B* ((*a*, *b*) ∈ *R* ∧
-> (*b*, *c*) ∈ *S*)}
+> Suppose *f*: *A* → *B* and *g*: *B* → *C*. Then *g* ○ *f* : *A* → *C*
+> and (*g* ○ *f*)(*a*) = *g*(*f*(*a*))
 
 **Example 3**
 
-> Let *S* be the set of all students at YCP and *C* be the set of all YCP courses.
+> Let *f*: ℕ → ℕ *f(n)* = *n*<sup>2</sup> + 2*n* + 1
 
-> Find a relation between students and courses and state the domain, range, and inverse of the relation.
+> Let *g*: ℕ → ℝ *g(n)* = *n* / (*n* + 1)
 
-We will let *E* be the relation between students and the courses they
-are enrolled in. Then
+> Determine (*g* ○ *f*)(*n*) and find (*g* ○ *f*)(2).
 
-> *E* = {(*s*, *c*) ∈ *S* × *C* \| *s* is enrolled in *c*}
+First (*g* ○ *f*)(*n*) = *g*(*f*(*n*)). Hence
 
-The domain is the set of students that are currently enrolled in a
-course at YCP.
+> ![image](images/lecture19/comp1.png)
 
-> Dom(*E*) = {*s* ∈ *S* \| ∃*c* ∈ *C* ((*s*, *c*) ∈ *E*)}
+For the value *n* = 2
 
-The range is the set of courses that have students enrolled in them
+> ![image](images/lecture19/comp2.png)
 
-> Range(*E*) = {*c* ∈ *C* \| ∃*s* ∈ *S* ((*s*, *c*) ∈ *E*)}
-
-The inverse is the relation between courses and students enrolled in
-them
-
-> *E* <sup>-1</sup> = {(*c*, *s*) ∈ *C* × *S* \| (*s*, *c*) ∈ *E*}
-
-**Example 4**
-
-> Using the relation *E* from the previous example, determine
-
-> *E* <sup>-1</sup> ○ *E* and *E* ○ *E* <sup>-1</sup>
-
-For *E* <sup>-1</sup> ○ *E*, since *E* is a relation from *S* to *C* and *E* <sup>-1</sup>
-is a relation from *C* to *S*, *E* <sup>-1</sup> ○ *E* will be a relation from *S*
-to *S*. Thus if we let *s* and *t* be two elements of *S*, then by the
-definition
-
-> *E* <sup>-1</sup> ○ *E* = {(*s*, *t*) ∈ *S* × *S* \| ∃*c* ∈ *C* ((*s*, *c*) ∈
-> *E* ∧ (*c*, *t*) ∈ *E* <sup>-1</sup>)}
->
-> > = {(*s*, *t*) ∈ *S* × *S* \| ∃*c* ∈ *C* (*s* is enrolled in *c* and
-> > *c* is a course that *t* is enrolled in)}
-> >
-> > = {(*s*, *t*) ∈ *S* × *S* \| ∃*c* ∈ *C* (both *s* and *t* are
-> > enrolled in *c*)}
->
-> Thus *E* <sup>-1</sup> ○ *E* are the pairs of students that are enrolled in the
-> same courses.
-
-For *E* ○ *E* <sup>-1</sup>, since *E* <sup>-1</sup> is a relation from *C* to *S* and *E*
-is a relation from *S* to *C*, *E* ○ *E* <sup>-1</sup> will be a relation from *C*
-to *C*. Thus if we let *c* and *d* be two elements of *C*, then by the
-definition
-
-> *E* ○ *E* <sup>-1</sup> = {(*c*, *d*) ∈ *C* × *C* \| ∃*s* ∈ *S* ((*c*, *s*) ∈
-> *E* <sup>-1</sup> ∧ (*s*, *d*) ∈ *E*)}
->
-> > = {(*c*, *d*) ∈ *C* × *C* \| ∃*s* ∈ *S* (*c* is a course *s* is
-> > enrolled in and *s* is enrolled in course *d*)}
-> >
-> > = {(*c*, *d*) ∈ *C* × *C* \| ∃*s* ∈ *S* (*s* is enrolled in both *c*
-> > and *d*)}
->
-> Thus *E* ○ *E* <sup>-1</sup> are the pairs of courses each student is enrolled
-> in.
-
-*Properties of Relations*
-
-Suppose *R* is a relation from *A* to *B*, *S* is a relation from *B* to
-*C*, and *T* is a relation from *C* to *D*. Then the following
-properties hold
-
-> 1.  (*R* <sup>-1</sup>)<sup>-1</sup> = *R*.
-> 2.  Dom(*R* <sup>-1</sup>) = Range(*R*).
-> 3.  Range(*R* <sup>-1</sup>) = Dom(*R*).
-> 4.  *T* ○ (*S* ○ *R*) = (*T* ○ *S*) ○ *R* (i.e. associativity for
->     composition)
-> 5.  (*S* ○ *R*)<sup>-1</sup> = *R* <sup>-1</sup> ○ *S* <sup>-1</sup>.
-
-Binary Relations
-================
-
-> **Definition**
-
-> A relation *R* is known as a *binary relation* if the elements of the ordered pairs are drawn from the same set *A*, i.e.
-> 
-> *R* ⊆ *A* × *A*
-
-We will use an alternative notation for binary relations
-
-> (*x*, *y*) ∈ *R* ⇒ *xRy*
-
-*Reflexive*
-
-> *R* is said to be *reflexive* if
->
-> ∀*x* ∈ *A* (*xRx*)
->
-> i.e. all pairs (*x*, *x*) ∈ *R*.
-
-*Symmetric*
-
-> *R* is said to be *symmetric* if
->
-> ∀*x* ∈ *A* ∀*y* ∈ *A* (*xRy* → *yRx*)
->
-> i.e. if (*x*, *y*) ∈ *R* then (*y*, *x*) ∈ *R*.
-
-*Transitive*
-
-> *R* is said to be *transitive* if
-> 
-> ∀*x* ∈ *A* ∀*y* ∈ *A* ∀*z* ∈ *A* ((*xRy* ∧ *yRz*) → *xRz*)
-> 
-> i.e. if (*x*, *y*) ∈ *R* and (*y*, *z*) ∈ *R* then (*x*, *z*) ∈ *R*.
-
-*Properties of Binary Relations*
-
-> 1.  *R* is *reflexive* ↔ *i*<sub>A</sub> ⊆ *R* (where *i*<sub>A</sub> is the *identity
->     relation* on *A* defined as
->
->     > *i*<sub>A</sub> = {(*x*, *y*) ∈ *A* × *A* \| *x* = *y*}
->
-> 2.  *R* is *symmetric* ↔ *R* = *R* <sup>-1</sup>
->
-> 3.  *R* is *transitive* ↔ *R* ○ *R* ⊆ *R*
-
-**Example 5**
-
-> Let the set *A* = {1,2} and *B* = ℘(*A*). List the elements of the binary relation *S* defined by
-
-> *S* = {(*x*, *y*) ∈ *B* × *B* \| *x* ⊆ *y*}
-
-For *A* = {1,2}, *B* = ℘(*A*) = { ∅, {1}, {2}, {1,2} }.
-
-Therefore the relation will consist of all pairs of *sets* from *B* in
-which the first set is a subset of the second.
-
-Since the emptyset is a subset of all sets (including itself), we know
-that the following ordered pairs are in *S*
-
-> (∅, ∅), (∅, {1}), (∅, {2}), (∅, {1,2})
-
-The set {1} is a subset of itself and {1,2} so the following ordered
-pairs are in *S*
-
-> ({1}, {1}), ({1}, {1,2})
-
-Likewise the set {2} is a subset of itself and {1,2} so the following
-ordered pairs are in *S*
-
-> ({2}, {2}), ({2}, {1,2})
-
-Finally, the set {1,2} is only a subset of itself giving the ordered
-pair
-
-> ({1,2}, {1,2})
-
-Thus the relation *S* has the elements
-
-> *S* = { (∅, ∅), (∅, {1}), (∅, {2}), (∅, {1,2}), ({1}, {1}), ({1},
-> {1,2}), ({2}, {2}), ({2}, {1,2}), ({1,2}, {1,2}) }
-
-**Example 6**
-
-> Prove *R* is *symmetric* ↔ *R* = *R* <sup>-1</sup>
-
-> (→) Assume *R* is *symmetric* and let *xRy*.
-> > 
-> > Since *R* is symmetric, *xRy* ⇒ *yRx*. But for *xRy*, *yR* <sup>-1</sup>*x* and thus *R* ⊆ *R* <sup>-1</sup>.
-> > 
-> > Similarly, suppose *xR* <sup>-1</sup>*y*. Then *yRx* and since *R* is symmetric ⇒ *xRy* and hence *R* <sup>-1</sup> ⊆ *R*.
-> > 
-> > Thus since *R* ⊆ *R* <sup>-1</sup> and *R* <sup>-1</sup> ⊆ *R*, *R* = *R* <sup>-1</sup>.
-
-> (←) Assume *R* = *R* <sup>-1</sup> and let *xRy*. 
-> > 
-> > Since *R* = *R* <sup>-1</sup> ⇒ *xR* <sup>-1</sup>*y* and thus *yRx*. Hence *xRy* → *yRx* which means *R* is *symmetric*.
+Note alternatively we could have computed *f(2)* = 9 and then *g(9)* =
+9/(9+1) = 9/10.

@@ -1,192 +1,226 @@
 ---
 layout: default
-title: "Lecture 15: Existence and Uniqueness Proofs"
+title: "Lecture 15: Proof by Induction"
 ---
 
-Unique Goals
-============
+Induction Goals
+===============
 
-### Proof Of Unique Particular Template
-
-> To prove a goal of the form ∃!*x* *P(x)*, i.e. that there is a *unique*
-> *x* that makes *P(x)* true, construct two separate proofs:
-
-> > *Existence:* Prove ∃ *x* *P(x)*.
-> > *Uniqueness:* Prove ∀*y* ∀*z* ((*P(y)* ∧ *P(z)*) → *y* = *z*).
+> To prove a goal of the form ∀*n* ∈ ℕ *P(n)* where ℕ is the set of
+> natural numbers, i.e. ℕ = {0,1,2,3,\...}, first prove *P(0)*, known as
+> the *base case*, and then prove ∀*n* ∈ ℕ (*P(n)* → *P(n+1)*), known as
+> the *induction step*. Thus we show that the statement is true for some
+> *initial value* (typically 0) and then prove that if *P(n)* is true then
+> *P(n+1)* is true. Thus since *P(0)* gives *P(1)* which gives *P(2)* and
+> so on proving *P(n)* for all *n*.
 
 > The form of the formal proof will have the form:
 
-> *Existence.* 
+> *Base Case.*
+ 
+> > \[Proof of *P(0)* goes here.\] 
 
-> > \[Proof of ∃ *x* *P(x)* goes here.\] 
+> *Induction Step.*
+ 
+> > \[Proof of ∀*n* ∈ ℕ (*P(n)* → *P(n+1)*) goes here.\]
 
-> *Uniqueness.* 
+Hence, proofs by induction can be written as 6 steps:
 
-> > \[Proof of ∀*y* ∀*z* ((*P(y)* ∧ *P(z)*) → *y* = *z*) goes here.\]
-
-> Therefore, ∃!*x* *P(x)*.
+{:start="0"}
+0. Write the induction given closed form for *n*.
+1. Write the induction goal closed form for *n+1* (simply substitute *n+1* for *n* in the given from step 0)
+2. Show the induction given is true for a base case, typically *n* = 0.
+3. Factor the induction formula for *n+1* from step 1 to include the induction formula for *n* from step 0.
+4. We will **assume** the induction formula from step 0 is true, i.e. we will use the conditional proof technique from [lecture 10](lecture10.html), and substitute the closed form solution from step 0 into step 3. 
+5. Perform any necessary algebra to achieve the closed form solution from step 1 for *n+1*.
 
 **Example 1**
 
-> Prove there is a unique set *A* such that for every set *B*, *A* ∪ *B* =
-> *B*.
+> Prove that for every natural number *n*, 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> = 2<sup>n+1</sup> - 1.
 
-First we identify the givens and goals for the existence part
+*Step 0:* Write the induction given closed form for *n*
 
-> *Givens*
+> ∑2<sup>i</sup> = 2<sup>n+1</sup> -1
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> Substituting *n*+1 for *n* in step 1 gives
+
+> 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> + 2<sup>n+1</sup> = 2<sup>n+2</sup> - 1.
+
+*Step 2:* Show the induction given is true for a base case.
+
+> First we can easily show the base case for *n* = 0 since
+
+> 2<sup>0</sup> = 1 and 2<sup>1</sup> - 1 = 2 - 1 = 1.
+
+*Step 3* We see that the induction given in step 0 is simply the first *n* terms of the induction goal in step 1, thus
+
+> 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> + 2<sup>n+1</sup> = (2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup>) + 2<sup>n+1</sup> = ∑2<sup>i</sup> + 2<sup>n+1</sup>
+
+*Step 4:* Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
+
+> Therefore we *assume* ∑2<sup>i</sup> = 2<sup>n+1</sup> - 1 is true, thus substituting gives
+
+> ∑2<sup>i</sup> + 2<sup>n+1</sup> = (2<sup>n+1</sup> - 1) + 2<sup>n+1</sup>
+
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
+
+> (2<sup>n+1</sup> - 1) + 2<sup>n+1</sup> = 2 ⋅ 2<sup>n+1</sup> - 1
+> > = 2<sup>n+2</sup> - 1
+
+Thus we have proved the induction step.
+
+Formally,
+
+> **Theorem.** *Prove that for every natural number n*, 2<sup>0</sup> + 2<sup>1</sup> +
+> \... + 2<sup>n</sup> = 2<sup>n+1</sup> - 1.
 >
-> > *A* and *B* are sets.
+> *Proof.* Using induction:
 >
-> *Goal*
+> > *Base Case:* Letting *n* = 0, we get 2<sup>0</sup> = 1 = 2<sup>1</sup> - 1.
 >
-> > ∃!*A* (∀*B* (*A* ∪ *B* = *B*)
-
-Since we only need to find *one* *A* that satisfies the condition *for
-all* *B*, we can simply let *A* = ∅. Then clearly ∅ ∪ *B* = *B* for all
-*B*. Thus *there exists* a set that is true *for all* *B*.
-
-Next we identify the givens and goals for the uniqueness part
-
-> *Givens*
->
-> > *C* and *D* are sets
+> > *Induction Step:* Let *n* be an arbitrary natural number and assume
+> > that 2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup> = 2<sup>n+1</sup> - 1. Then
 > >
-> > ∀*B* (*C* ∪ *B* = *B*)
-> >
-> > ∀*B* (*D* ∪ *B* = *B*)
->
-> *Goal*
->
-> > *C* = *D*
-
-Since the second given must be true *for all* *B*, choose *B* = *D*
-giving *C* ∪ *D* = *D*. Similarly for the third given choose *B* = *C*
-giving *D* ∪ *C* = *C*. Then since *D* = *C* ∪ *D* = *D* ∪ *C* = *C* we
-have *C* = *D*. Thus there must be a *unique* set *for all* *B*
-(assuming one exists which was shown in the previous part).
-
-Thus the formal proof would be
-
-> **Theorem.** *There is a unique set A such that for every set B, A* ∪
-> *B = B*.
->
-> *Proof.* 
-> > Existence: Clearly ∀*B* (∅ ∪ *B* = *B*), thus there exists a
-> > set that satisfies the required property.
->
-> > Uniqueness: Let *C* and *D* be sets such that ∀*B* (*C* ∪ *B* = *B*)
-> > and ∀*B* (*D* ∪ *B* = *B*). Since these conditions must hold for all
-> > *B*, select *B* = *D* in the first assumption giving *C* ∪ *D* = *D*.
-> > Similarly selecting *B* = *C* in the second assumption gives *D* ∪ *C*
-> > = *C*. Clearly *C* ∪ *D* = *D* ∪ *C*, thus *C* = *D*.
->
-> Therefore, ∅ is the unique set such that ∀*B* (∅ ∪ *B* = *B*).
-
-Unique Givens
-=============
-
-### Proof With Unique Particular Given Template
-
-> To use a given of the form ∃!*x* *P(x)*, i.e. that there is a *unique*
-> *x* that makes *P(x)* true, use two separate givens
-
-> - *Existence:* ∃ *x* *P(x)*. Select an *existential instantiation*
-> *x*<sub>0</sub> and assert *P(x*<sub>0</sub>*)*.
->
-> - *Uniqueness:* ∀*y* ∀*z* ((*P(y)* ∧ *P(z)*) → *y* = *z*). If during
-> the proof you can show *P(y)* and *P(z)* are both true, then you can
-> assert *y* = *z*.
+> > > (2<sup>0</sup> + 2<sup>1</sup> + \... + 2<sup>n</sup>) + 2<sup>n+1</sup> = (2<sup>n+1</sup> - 1) + 2<sup>n+1</sup>
+> > >
+> > > > = 2 ⋅ 2<sup>n+1</sup> - 1
+> > > >
+> > > > = 2<sup>n+2</sup> - 1
 
 **Example 2**
 
-> Suppose *A*, *B*, and *C* are sets. *A* and *B* are not disjoint, *A*
-> and *C* are not disjoint, and *A* has exactly one element. Prove that
-> *B* and *C* are not disjoint.
+> Prove that for all *n* ∈ ℕ, 0 + 1 + 2 + \... + *n* = *n*(*n* + 1)/2.
 
-First we identify the givens and goals
+*Step 0:* Write the induction given closed form for *n*
 
-> *Givens*
->
-> > *A* ∩ *B* ≠ ∅
-> >
-> > *A* ∩ *C* ≠ ∅
-> >
-> > ∃!*x* (*x* ∈ *A*)
->
-> *Goal*
->
-> > *B* ∩ *C* ≠ ∅
+> 0 + 1 + 2 + \... + *n* = ∑i = *n*(*n* + 1)/2
 
-Translating all the statements using quantifiers gives
+*Step 1:* Write the induction goal closed form for *n*+1
 
-> *Givens*
->
-> > ∃*x* (*x* ∈ *A* ∩ *B*)
-> >
-> > ∃*x* (*x* ∈ *A* ∩ *C*)
-> >
-> > ∃*x* (*x* ∈ *A*)
-> >
-> > ∀*y* ∀*z* (*y* ∈ *A* ∧ *z* ∈ *A* → *y* = *z*)
->
-> *Goal*
->
-> > ∃*x* (*x* ∈ *B* ∩ *C*)
+> Substituting *n*+1 for *n* in step 1 gives
 
-Applying the definition of intersection to the first two givens and the
-goal then gives
+> 0 + 1 + 2 + \... + *n* + (*n* + 1) = (*n* + 1)((*n*+1)+1)/2 = (*n*+1)(*n*+2)/2
 
-> *Givens*
->
-> > ∃*x* (*x* ∈ *A* ∧ *x* ∈ *B*)
-> >
-> > ∃*x* (*x* ∈ *A* ∧ *x* ∈ *C*)
-> >
-> > ∃*x* (*x* ∈ *A*)
-> >
-> > ∀*y* ∀*z* (*y* ∈ *A* ∧ *z* ∈ *A* → *y* = *z*)
->
-> *Goal*
->
-> > ∃*x* (*x* ∈ *B* ∧ *x* ∈ *C*)
+*Step 2:* Show the induction given is true for a base case.
 
-We can now apply existential instantiation to the first two givens by
-letting *x* = *a* for the first given and *x* = *b* for the second given
-(note that we must use different particulars since we cannot assume they
-are the same element). Thus we can also remove the third given since it
-is redundant, giving
+> The base case for *n* = 0 gives ∑i = 0 and 0(1)/2 = 0.
 
-> *Givens*
->
-> > *a* ∈ *A*
-> >
-> > *a* ∈ *B*
-> >
-> > *b* ∈ *A*
-> >
-> > *b* ∈ *C*
-> >
-> > ∀*y* ∀*z* (*y* ∈ *A* ∧ *z* ∈ *A* → *y* = *z*)
->
-> *Goal*
->
-> > ∃*x* (*x* ∈ *B* ∧ *x* ∈ *C*)
+*Step 3:* We see that the induction given in step 0 is simply the first *n* terms of the induction goal in step 1, thus
 
-At this point we observe that since *a* ∈ *A* and *b* ∈ *A*, by the last
-given we can assert that *a* = *b*. Therefore we get that *b* ∈ *B* and
-*b* ∈ *C* which means there exists an element in their intersection and
-thus *B* and *C* are not disjoint.
+> 0 + 1 + 2 + \... + *n* + *n* + 1 = (0 + 1 + 2 + \... + *n*) + (*n* + 1) = ∑i + (*n* + 1)
 
-Thus the formal proof would be
+*Step 4:*  Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
 
-> **Theorem.** Suppose A, B, and C are sets. Furthermore, suppose A and
-> B are not disjoint, A and C are not disjoint, and A has exactly one
-> element. Then B and C are not disjoint.
+> Therefore we *assume* ∑i = *n*(*n* + 1)/2 is true, thus substituting gives
+
+> ∑i + (*n* + 1) = *n*(*n* + 1)/2 + (*n* + 1)
+
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 2 for *n*+1
+
+> ∑i + (*n* + 1) = *n*(*n* + 1)/2 + (*n* + 1)
+> > = (*n* + 1)(*n*/2 + 1)
+> >
+> > = (*n* + 1)(*n* + 2)/2
+
+Formally,
+
+> **Theorem.** *Prove that for all n* ∈ ℕ, 0 + 1 + 2 + \... + *n* =
+> *n*(*n* + 1)/2.
 >
-> *Proof.* 
-> > Since *A* and *B* are not disjoint, let *a* be an element
-> > such that *a* ∈ *A* and *a* ∈ *B*. Similarly since *A* and *C* are not
-> > disjoint, let *b* be an element such that *b* ∈ *A* and *b* ∈ *C*.
-> > Since *A* has *exactly* one element and *a* ∈ *A* and *b* ∈ *A*, we
-> > can conclude that *a* = *b*. But then *b* ∈ *B* and *b* ∈ *C* so
-> > therefore *b* ∈ *B* ∩ *C*, and thus *B* and *C* are not disjoint.
+> *Proof.* Using induction:
+>
+> *Base Case:* Letting *n* = 0, we get 0(1)/2 = 0.
+>
+> *Induction Step:* Let *n* be an arbitrary natural number and assume
+> that 0 + 1 + 2 + \... + *n* = *n*(*n* + 1)/2. Then
+>
+> > > 0 + 1 + 2 + \... + *n* + (*n* + 1) = (0 + 1 + 2 + \... + *n*) + (*n* + 1)
+> > >
+> > > > = *n*(*n* + 1)/2 + (*n* + 1)
+> > > > 
+> > > > = (*n* + 1)(*n*/2 + 1)
+> > > > 
+> > > > = (*n* + 1)(*n* + 2)/2
+
+**Example 3**
+
+> Prove that for sufficiently large *n*, that 2<sup>n</sup> \> *n*<sup>2</sup>.
+
+*Step 0:* Write the induction given closed form for *n*
+
+> For sufficiently large *n*, 2<sup>n</sup> \> *n*<sup>2</sup>
+
+*Step 1:* Write the induction goal closed form for *n*+1
+
+> 2<sup>n+1</sup> \> (*n*+1)<sup>2</sup>
+
+*Step 2:* Show the induction given is true for a base case.
+
+> Here we *cannot* use *n* = 0 even though for *n* = 0, 2<sup>0</sup> = 1 > 0<sup>2</sup> = 0 and for *n* = 1, 2<sup>1</sup> = 2 > 1<sup>2</sup> = 1 because for *n* =
+2, 2<sup>2</sup> = 4 = 2<sup>2</sup> and for *n* = 3, 2<sup>3</sup> = 8 < 3<sup>2</sup> = 9. Furthermore for *n* = 4, 2<sup>4</sup> = 16 = 4<sup>2</sup>.
+However for *n* = 5, 2<sup>5</sup> = 32 > 5<sup>2</sup> = 25. Thus while the theorem is *not* true *for all* *n* ∈ ℕ, it may be true for *n* ≥ 5.
+
+*Step 3:* We see that the induction goal can be factored to include the induction given, thus
+
+> 2<sup>n+1</sup> = 2 ⋅ 2<sup>n</sup>
+
+*Step 4:*  Assume the induction formula from step 0 is true and substitute the closed form solution into step 3.
+
+> Therefore we *assume* 2<sup>n</sup> \> *n*<sup>2</sup> is true, thus substituting gives
+
+> 2 ⋅ 2<sup>n</sup> \> 2 ⋅ *n*<sup>2<sup>
+
+*Step 5:* Perform any necessary algebra to show the closed form solution from step 1 for *n*+1
+
+> At this point we now need to show 2 ⋅ *n*<sup>2</sup> \> (*n*+1)<sup>2</sup> 
+
+> We can expand the right hand side as (*n*+1)<sup>2</sup> = *n*<sup>2</sup> + 2*n* + 1, giving
+
+> 2 ⋅ *n*<sup>2</sup> \> *n*<sup>2</sup> + 2*n* + 1
+
+> Bringing *n*<sup>2</sup> from the right hand side of the
+inequality to the left reduces the proof to showing for *n* ≥ 5 that
+
+> *n*<sup>2</sup> \> 2*n* + 1
+
+> Now we observe that for *n* ≥ 5 it is clear that *n*<sup>2</sup> = (*n*)(*n*) ≥
+5*n* and thus
+
+> *n*<sup>2</sup> ≥ 5*n*
+>
+> > = 2*n* + 3*n*
+> > 
+> > \> 2*n* + 1
+
+Hence the theorem is true for \"sufficiently large\" *n* which in this
+case is *n* ≥ 5.
+
+Formally,
+
+> **Theorem.** *Prove that for sufficiently large n, that 2*<sup>n</sup> \>
+> *n*<sup>2</sup>.
+>
+> *Proof.* Using induction:
+>
+> *Base Case:* Letting *n* = 5, clearly 2<sup>n</sup> = 2<sup>5</sup> = 32 \> *n*<sup>2</sup> = 5<sup>2</sup> = 25. Thus 2<sup>n</sup> \> *n*<sup>2</sup> for *n* = 5.
+>
+> *Induction Step:* Let *n* be an arbitrary natural number greater than
+> 5 and assume that 2<sup>n</sup> \> *n*<sup>2</sup>. Since *n* \> 5, clearly *n*<sup>2</sup> = (*n*)(*n*) \> 5*n*. Thus
+>
+> > 2<sup>n+1</sup> = 2 ⋅ 2<sup>n</sup>
+> >
+> > > \> 2 ⋅ (*n*<sup>2</sup>)
+> > >
+> > > = *n*<sup>2</sup> + *n*<sup>2</sup>
+> > >
+> > > ≥ *n*<sup>2</sup> + 5*n*
+> > >
+> > > = *n*<sup>2</sup> + 2*n* + 3*n*
+> > >
+> > > \> *n*<sup>2</sup> + 2*n* + 1
+> > >
+> > > = (*n* + 1)<sup>2</sup>
+
+> Therefore 2<sup>n+1</sup> \> (*n* + 1)<sup>2</sup> and hence 2<sup>n</sup> \> *n*<sup>2</sup> for *n* ≥ 5.
