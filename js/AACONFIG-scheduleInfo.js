@@ -66,11 +66,11 @@ courseInfo.classPeriods = [
 		reading: "3.4 pg. 130-139, 3.5 pg. 142-150",
 	},
 	{
-		topic: new Topic("Lecture 16: Proof by Mathematical Induction","lectures/lecture16.html"),
+		topic: new Topic("Lecture 15: Proof by Mathematical Induction","lectures/lecture15.html"),
 		reading: "6.1 pg. 273-278",
 	},
 	{
-		topic: new Topic("Lecture 17: Recursion","lectures/lecture17.html"),
+		topic: new Topic("Lecture 16: Recursion","lectures/lecture16.html"),
 		reading: "6.3 pg. 293-299",
 	},
 	{
@@ -80,23 +80,23 @@ courseInfo.classPeriods = [
 		topic: new Topic("** Exam 3", "")
 	},
 	{
-		topic: new Topic("Lecture 18: Relations","lectures/lecture18.html"),
+		topic: new Topic("Lecture 17: Relations","lectures/lecture17.html"),
 		reading: "4.1-4.3 pg. 163-186",
 	},
 	{
-		topic: new DoubleTopic("Lecture 19: Functions","lectures/lecture19.html", "Lecture 20: Function Properties","lectures/lecture20.html"),
+		topic: new DoubleTopic("Lecture 18: Functions","lectures/lecture18.html", "Lecture 19: Function Properties","lectures/lecture19.html"),
 		reading: "5.1 pg. 229-236, 5.2-5.3 pg. 240-256",
 	},
 	{
-		topic: new DoubleTopic("Lecture 21: Combinatorics","lectures/lecture21.html", "Assignment 7 Due","assign/assign07.html"),
+		topic: new DoubleTopic("Lecture 20: Combinatorics","lectures/lecture20.html", "Assignment 7 Due","assign/assign07.html"),
 		reading: "",
 	},
 	{
-		topic: new Topic("Lecture 22: Permutations","lectures/lecture22.html"),
+		topic: new Topic("Lecture 21: Permutations","lectures/lecture21.html"),
 		reading: "",
 	},
 	{
-		topic: new Topic("Lecture 23: Combinations","lectures/lecture23.html"),
+		topic: new Topic("Lecture 22: Combinations","lectures/lecture22.html"),
 		reading: "",
 	},
 	{
