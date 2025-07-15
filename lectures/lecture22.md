@@ -177,6 +177,6 @@ which is equivalent to
 
 > <sub>5</sub>*C*<sub>0</sub> + <sub>5</sub>*C*<sub>1</sub> + <sub>5</sub>*C*<sub>2</sub> + <sub>5</sub>*C*<sub>3</sub> = 1 + 5 + 10 + 10 = 26
 	
-Additionally, if we look at the sum of the coefficients across any particular row we see that they sum up to 2<sup>n<\sup. Thus 
+Additionally, if we look at the sum of the coefficients across any particular row we see that they sum up to 2<sup>n</sup>. Thus 
 
 > ∑<sub>n</sub>*C*<sub>i</sub> = 2<sup>n</sup>
