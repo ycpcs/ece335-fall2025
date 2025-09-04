@@ -163,7 +163,7 @@ Then symbolically the original statement is *R* → (*W* ∧ ¬*S*)
 > >
 > > ¬*R* → ¬(*W* ∧ ¬*S*)
 > >
-> > which is the converse and thus not equivalent to the original.
+> > which is the contrapositive of the *converse* and thus not equivalent to the original.
 
 Biconditionals (if and only if)
 ===============================
