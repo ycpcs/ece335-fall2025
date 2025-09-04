@@ -144,7 +144,7 @@ Then symbolically the original statement is *R* → (*W* ∧ ¬*S*)
 > is equivalent to the original.
 >
 > (c) "Necessary" means reverse implication thus giving (*W* ∧ ¬*S*) →
-> ¬*R*. By the contrapositive we have ¬*R* → ¬(*W* ∧ ¬*S*) which is
+> *R*, which is
 > the converse and thus not equivalent to the original.
 >
 > (d) (*W* → *R*) ∨ (¬*S* → *R*). Equivalently
