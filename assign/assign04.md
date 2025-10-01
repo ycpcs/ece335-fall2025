@@ -25,4 +25,4 @@ Book Questions from *How To Prove It - 3rd ed.*
 > 
 > 3.1.8 - Begin by applying the conditional proof form to write the set of givens and goal. Then use set definitions (similar to the previous section) to rewrite the set expression in its logical form. Manipulate the logical form using the givens to reduce it until the goal is reached. You should show your scratch work, but remember that the final statement of the *proof* should *not* show the scratch work, but be a concise progression of justified steps leading to the conclusion.
 > 
-> 3.1.12 - Consider proof by *contrapositive*. Construct the contrapositive and then state the givens of goals to prove the theorem.
+> 3.1.12 - Consider proof by *contrapositive*. Construct the contrapositive and then state the givens and goals to prove the theorem.
