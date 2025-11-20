@@ -110,7 +110,7 @@ courseInfo.classPeriods = [
 // The following is for the college-scheduled final exam.
 // It is not used if final is on last day of class"
 courseInfo.finalExamDates = [
-		new FinalExamDay("101", new Date("12/11/2025 10:15:00")),
+		new FinalExamDay("101", new Date("12/15/2025 12:30:00")),
 //		new FinalExamDay("101", new Date("05/11/2022 08:00:00")),
 //		new FinalExamDay("103", new Date("12/13/2019 12:45:00")),
 //		new FinalExamDay("104", new Date("12/13/2019 15:00:00"))
